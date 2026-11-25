@@ -1,59 +1,24 @@
 # Calcolatrice
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
+Una calcolatrice web con qualche sorpresa.
 
-## Development server
+## Cosa fa
 
-To start a local development server, run:
+- Le quattro operazioni, con calcoli in catena, percentuale, cambio di segno e cancellazione dell'ultima cifra.
+- Virgola all'italiana e risultati senza errori di arrotondamento (0,1 + 0,2 = 0,3).
+- Si usa anche da tastiera: numeri, `+ - * /`, Invio, Backspace ed Esc.
+- **Numeri speciali:** se il risultato è 67, 21, 69 o 104, prima del risultato parte un video meme (si può saltare).
+- **Diviso zero:** un buco nero risucchia la calcolatrice e la chiude.
 
-```bash
-ng serve
-```
+I video dei meme non sono nel repository, perché sono contenuti di terzi: vanno messi in `public/` con i nomi `six-seven.mp4`, `21.mp4`, `69.mp4` e `104.mp4`. Senza video la calcolatrice mostra subito il risultato.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Sviluppo
 
 ```bash
-ng generate component component-name
+npm ci
+npm start      # http://localhost:4200
+npm test
+npm run build
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Realizzata con Angular.
